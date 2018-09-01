@@ -6,31 +6,31 @@ The TUI mode is a more user friendly UI that allows you to run thruoght the debu
 
 Standard UI:
 
-[with_A](https://github.com/MarcoArazzi/gdb_notes/blob/master/images/gdb1png)
+![with_A](https://github.com/MarcoArazzi/gdb_notes/blob/master/images/gdb1.png)
 
 In order to activate the TUI mode you have to press ```Ctrl```+```X```+```A``` after you already started the program.
 
 TUI mode:
 
-[with_A](https://github.com/MarcoArazzi/gdb_notes/blob/master/images/gdb2png)
+![with_A](https://github.com/MarcoArazzi/gdb_notes/blob/master/images/gdb2.png)
 
 Type ``` next ``` to do a step.
 
-[with_A](https://github.com/MarcoArazzi/gdb_notes/blob/master/images/gdb3png)
+![with_A](https://github.com/MarcoArazzi/gdb_notes/blob/master/images/gdb3.png)
 
 Sometimes it is possible that after a step it starts to display duplicate lines of code or stuff like that: 
 
-[with_A](https://github.com/MarcoArazzi/gdb_notes/blob/master/images/gdb4png)
+![with_A](https://github.com/MarcoArazzi/gdb_notes/blob/master/images/gdb4.png)
 
 in order to fix this just repaint the display with ```Ctrl```+```L```.
 
 During the dubugging if you press ```Ctrl```+```X``` and then ```2```  you can see the assemly of the program highlighting where you arrived executing it.
 
-[with_A](https://github.com/MarcoArazzi/gdb_notes/blob/master/images/gdb5png)
+![with_A](https://github.com/MarcoArazzi/gdb_notes/blob/master/images/gdb5.png)
 
 And if you do it again it shows the registers and if you want to see the float registers type "tui reg float".
 
-[with_A](https://github.com/MarcoArazzi/gdb_notes/blob/master/images/gdb6png)
+![with_A](https://github.com/MarcoArazzi/gdb_notes/blob/master/images/gdb6.png)
 
 If you want to go back press ```Ctrl```+```X``` and then ```1``` one time to see the source code and the assembly or two times to see only the source code. 
 
@@ -44,7 +44,7 @@ Sometimes says "No source aviable" try to scroll or resize the window to fix it.
 
 There's a python interpreter built in gdb. You can execute single function like print or an entire script by typing python followed by the lines you want to execute. The last line has to be "end" in order to execute.
 
-[with_A](https://github.com/MarcoArazzi/gdb_notes/blob/master/images/gdb7png)
+![with_A](https://github.com/MarcoArazzi/gdb_notes/blob/master/images/gdb7.png)
 
 You can define functions and then call them from the command line or make them first class gdb command.
 Also you can interact with gdb itself for example printing the breakpoints you added typing:
@@ -63,7 +63,7 @@ You can even set breakpoints from python for example typing:
 python gdb.Breakpoint('7')
 #7 is the line. 
 ```
-[with_A](https://github.com/MarcoArazzi/gdb_notes/blob/master/images/gdb8png)
+![with_A](https://github.com/MarcoArazzi/gdb_notes/blob/master/images/gdb8.png)
 
 ## Reversable Debugging
 
